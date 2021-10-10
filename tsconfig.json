@@ -10,11 +10,9 @@
     "noEmit": true,
     "strict": true,
     "target": "esnext",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "*": ["src/*"],
-      "tests": ["tests/*"],
-      "@components/*": ["src/components/*"]
+      "@/*": ["./App/*"]
     }
   },
   "exclude": [
