@@ -7,8 +7,8 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {RootNavigator} from '@/Navigators/navigationContainer';
 
 const App: () => ReactNode = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -22,7 +22,7 @@ const App: () => ReactNode = () => {
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <View style={styles.parentContainer}>
-        <Text>App</Text>
+        <RootNavigator />
       </View>
     </SafeAreaView>
   );
