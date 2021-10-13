@@ -1,4 +1,4 @@
-import Scaling from './Scaling';
+import Scaling from './scaling';
 
 export const MetricSizes = {
   /*
